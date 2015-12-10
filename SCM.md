@@ -3,7 +3,7 @@
 
 ### Branching Strategy
 
-![Gitflow](http://jeffkreeftmeijer.com/images/gitflow.gif)
+![Gitflow](http://blogpro.toutantic.net/wp-content/uploads/2012/01/anothergitflow.png)
 
 - We use the [Gitflow](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/) branching strategy.
 - We expect to have the following branches:
