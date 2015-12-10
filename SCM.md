@@ -59,3 +59,33 @@
 - Release candidates: `x.y.0-RC.n`
 - Minor release: `x.y.0`
 - Hotfix off of master: `x.y.z`
+
+###Commit Messages
+
+Minimum commit message requirements:
+
+```
+[JIRA issue key] Short, one line summary of the change
+```
+
+Ideal commit message:
+
+```
+[JIRA issue key] [other smart commit metadata] Summary of the change
+
+More detailed explanatory text, if necessary. Wrap it to about 72
+characters or so. In some contexts, the first line is treated as the
+subject of the commit and the rest of the text as the body. The
+blank line separating the summary from the body is critical (unless
+you omit the body entirely); various tools like `log`, `shortlog`
+and `rebase` can get confused if you run the two together.
+
+Signed off by: ....
+
+```
+
+###References
+
+- [Commit message formatting.](http://chris.beams.io/posts/git-commit/)
+- [Semver](http://semver.org/)
+- [Smart commits](https://confluence.atlassian.com/fisheye/using-smart-commits-298976812.html)
