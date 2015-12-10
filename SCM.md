@@ -47,11 +47,6 @@
 - Monday reviews are a good opportunity to review latest merges into the development branch.
 - Merges into release candidate branches, hotfixes and master must be reviewed by the whole team.
 
-###Hooks
-
-- Ensure every feature branch has a JIRA issue.
-- We use [smart commits](https://confluence.atlassian.com/fisheye/using-smart-commits-298976812.html) to manage JIRA issue workflows.
-
 ###Tags
 
 - [Semantic versioning](http://semver.org/)
