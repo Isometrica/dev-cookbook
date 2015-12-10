@@ -31,7 +31,8 @@
   - `hotfix/issues-key][description]`
 
     - Hotfix branch
-    - _Only_ merged to / from `master`
+    - _Only_ branch from `master`
+    - _Must_ merge into `master` and `develop` simultaneously
     - Tagged when merged back into master
     - _Must_ correspond to a JIRA issue
     - _Must_ have passing build to merge into `master`
