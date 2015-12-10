@@ -1,7 +1,7 @@
 
-# Source Control Management
+#Source Control Management
 
-### Branching Strategy
+###Branching Strategy
 
 - We use the [Gitflow](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/) branching strategy.
 - We expect to have the following branches:
@@ -22,7 +22,7 @@
   - `rc/[version number]`
 
     - Release candidate branch
-    - Branch off of `develop` for each release candidate.
+    - Branch off of `develop` and tagged for each release candidate.
     - Apply fixes to release candidate on _only_ on this branch.
     - Can be merged into `develop` periodically
     - Merged into `master` and tagged when released
@@ -32,6 +32,7 @@
 
     - Hotfix branch
     - _Only_ merged to / from `master`
+    - Tagged when merged back into master
     - _Must_ correspond to a JIRA issue
     - _Must_ have passing build to merge into `master`
 
@@ -40,13 +41,21 @@
     - Live stable branch
     - _Must_ have passing build
 
-### Policies
+###Policies
 
 - Individual developers are responsible for ensuring that their tests pass when merging into the development branch.
 - Monday reviews are a good opportunity to review latest merges into the development branch.
 - Merges into release candidate branches, hotfixes and master must be reviewed by the whole team.
 
-### Hooks
+###Hooks
 
 - Ensure every feature branch has a JIRA issue.
 - We use [smart commits](https://confluence.atlassian.com/fisheye/using-smart-commits-298976812.html) to manage JIRA issue workflows.
+
+###Tags
+
+- [Semantic versioning](http://semver.org/)
+- Major release: `x.0.0`
+- Release candidates: `x.y.0-RC.n`
+- Minor release: `x.y.0`
+- Hotfix off of master: `x.y.z`
