@@ -22,8 +22,8 @@
   - `rc/[version number]`
 
     - Release candidate branch
-    - Branch off of `develop` and tagged for each release candidate.
-    - Apply fixes to release candidate on _only_ on this branch.
+    - Branch off of `develop`
+    - Apply fixes to release candidate on _only_ on this branch
     - Can be merged into `develop` periodically
     - Merged into `master` and tagged when released
     - _Must_ have passing build to merge into `master`
@@ -52,7 +52,6 @@
 
 - [Semantic versioning](http://semver.org/)
 - Major release: `x.0.0`
-- Release candidates: `x.y.0-RC.n`
 - Minor release: `x.y.0`
 - Hotfix off of master: `x.y.z`
 
@@ -82,6 +81,7 @@ Signed off by: ....
 
 ###References
 
-- [Commit message formatting.](http://chris.beams.io/posts/git-commit/)
+- [Workflow diagram](http://nvie.com/files/Git-branching-model.pdf)
+- [Commit message formatting](http://chris.beams.io/posts/git-commit/)
 - [Semver](http://semver.org/)
 - [Smart commits](https://confluence.atlassian.com/fisheye/using-smart-commits-298976812.html)
